@@ -383,6 +383,23 @@ h3 {
   color: #ffffff;
 }
 
+h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 79px;
+  letter-spacing: 2.88px;
+  color: #FFFFFF;
+}
+
+h5 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #118DA8;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -630,6 +647,73 @@ h3 {
   font-size: 22px;
   line-height: 33px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.host {
+  padding: 100px 0;
+}
+
+.host .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.host-content {
+  margin-right: 60px;
+}
+
+.host-content_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 112px;
+  height: 112px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: #118DA8;
+}
+
+.host-content_button img {
+  width: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.host-content_title {
+  margin-bottom: 28px;
+}
+
+.host-content_text {
+  margin: 0;
+  margin-bottom: 33px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.host-content_text:last-child {
+  margin-bottom: 0;
+}
+
+.host-image {
+  min-width: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
 }
 
 .header-menu_link:hover {
