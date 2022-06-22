@@ -1,0 +1,54 @@
+.hero
+  padding-top: 40px
+  & .container
+    display: flex
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: -25px
+      left: -25px
+      width: 100%
+      height: 100%
+      background-image: url('../images/hero-img-lines.png')
+      background-repeat: no-repeat
+  &-content
+    margin-bottom: 154px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    &_text
+      margin: 0
+      margin-bottom: 15px
+    &_icons
+      display: flex
+    &_link
+      display: block
+      width: 32px
+      height: 32px
+      margin-right: 17px
+  &-image
+    width: 650px
+    margin-right: 60px
+    border-radius: 12px
+
+  &-title
+    margin-bottom: 75px
+    font-size: 70px
+    line-height: 88px
+    letter-spacing: 3.2px
+    &--underline
+      position: relative
+      font-size: 75px
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 11px
+        background-image: url('../images/hero-title-underline.png')
+        background-repeat: no-repeat
+    &--bold
+      font-weight: 700
+      font-size: 80px
