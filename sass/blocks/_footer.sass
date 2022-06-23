@@ -1,0 +1,32 @@
+.footer
+  padding: 100px 0
+  &-wrapper
+    display: grid
+    grid-template-columns: 1fr minmax(min-content, 180px) minmax(180px, 180px) 1fr
+    grid-gap: 16px
+  &-column
+    &_logo
+      display: flex
+      margin-bottom: 20px
+      width: 224px
+      & img
+        width: inherit
+        object-fit: contain
+    &_social
+      display: flex
+      &-link
+        display: block
+        width: 24px
+        height: 24px
+        margin-right: 10px
+  &-menu
+    &_item
+      margin-bottom: 10px
+    &_link
+      font-weight: 400
+      font-size: 17px
+      line-height: 27px
+      color: #FFFFFF
+  &-stations
+    &_link
+      margin-right: 17px
