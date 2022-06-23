@@ -796,7 +796,62 @@ h6 {
   line-height: 29px;
 }
 
+.reviews {
+  padding: 100px 0;
+}
+
+.reviews-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(422px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(422px, 1fr));
+  grid-gap: 16px;
+}
+
+.reviews-item {
+  padding: 54px 54px 51px 50px;
+  border-radius: 32px;
+  background-color: #000000;
+}
+
+.reviews-item_rating {
+  margin-bottom: 21px;
+}
+
+.reviews-item_rating span {
+  color: #FCFF51;
+}
+
+.reviews-item_text {
+  margin: 0;
+  margin-bottom: 19px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #FFFFFF;
+}
+
+.reviews-item_author {
+  margin: 0;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .header-menu_link:hover {
   color: #118DA8;
+}
+
+.reviews-item {
+  -webkit-transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reviews-item:hover {
+  -webkit-transform: scale(1.035, 1.035);
+          transform: scale(1.035, 1.035);
+  -webkit-box-shadow: 0 0 30px rgba(17, 141, 168, 0.5);
+          box-shadow: 0 0 30px rgba(17, 141, 168, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
