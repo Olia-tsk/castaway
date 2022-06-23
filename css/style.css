@@ -400,6 +400,15 @@ h5 {
   color: #118DA8;
 }
 
+h6 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 79px;
+  letter-spacing: 2.88px;
+  color: #FFFFFF;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,6 +420,7 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   padding: 12px 18px;
+  border: none;
   border-radius: 6px;
   color: #ffffff;
   background-color: #118DA8;
@@ -479,8 +489,8 @@ h5 {
   position: absolute;
   top: -25px;
   left: -25px;
-  width: 100%;
-  height: 100%;
+  width: 68px;
+  height: 74px;
   background-image: url("../images/hero-img-lines.png");
   background-repeat: no-repeat;
 }
@@ -714,6 +724,76 @@ h5 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 12px;
+}
+
+.subscribe {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.subscribe-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 60px 75px;
+  border-radius: 32px;
+  background-color: #000000;
+}
+
+.subscribe-wrapper::after {
+  position: absolute;
+  content: '';
+  bottom: -30px;
+  left: -40px;
+  width: 147px;
+  height: 91px;
+  background-image: url("../images/subscribe-lines.png");
+  background-repeat: no-repeat;
+}
+
+.subscribe-column {
+  width: 45%;
+}
+
+.subscribe-form {
+  width: 45%;
+  padding-left: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.subscribe-form_input {
+  padding: 26px 19px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 6px;
+  background-color: #191919;
+}
+
+.subscribe-form_button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 9px 15px 9px 19px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 29px;
 }
 
 .header-menu_link:hover {
