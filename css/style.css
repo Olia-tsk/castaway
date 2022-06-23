@@ -950,6 +950,17 @@ h6 {
   color: #118DA8;
 }
 
+.host-content_button:hover img {
+  -webkit-animation-name: bounceAlpha;
+          animation-name: bounceAlpha;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
 .reviews-item {
   -webkit-transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -964,5 +975,51 @@ h6 {
 
 .footer-menu_link:hover {
   color: #118DA8;
+}
+
+@-webkit-keyframes bounceAlpha {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateX(15px) scale(0.9);
+            transform: translateX(15px) scale(0.9);
+  }
+  26% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px) scale(0.9);
+            transform: translateX(-20px) scale(0.9);
+  }
+  55% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes bounceAlpha {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translateX(15px) scale(0.9);
+            transform: translateX(15px) scale(0.9);
+  }
+  26% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px) scale(0.9);
+            transform: translateX(-20px) scale(0.9);
+  }
+  55% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */
