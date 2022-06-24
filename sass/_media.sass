@@ -1,6 +1,9 @@
 @media (max-width: 1400px)
   .container
     width: 90%
+  .host
+    &-image
+      min-width: 50%
 
 @media (max-width: 1200px)
   h2
@@ -9,6 +12,9 @@
   h3
     font-size: 56px
     line-height: 68px
+  h4
+    font-size: 52px
+    line-height: 70px
   .hero
     &-image
       width: 55%
@@ -21,6 +27,15 @@
     padding: 70px 0
     &-top
       padding: 0
+  .host
+    padding: 0
+    padding-bottom: 110px
+    &-image
+      min-width: 45%
+    &-content
+      &_button
+        width: 90px
+        height: 90px
 
 // @media (max-width: 1100px)
 
@@ -30,7 +45,7 @@
   h2
     font-size: 50px
     line-height: 62px
-  h3
+  h3, h4
     font-size: 46px
     line-height: 56px
   .hero
@@ -54,6 +69,16 @@
         &-text
           font-size: 20px
           line-height: 31px
+  .host
+    &-content
+      margin-right: 40px
+      &_button
+        width: 80px
+        height: 80px
+      &_text
+        margin-bottom: 15px
+        font-size: 20px
+        line-height: 30px
 
 // @media (max-width: 930px)
 
@@ -61,7 +86,7 @@
   h2
     font-size: 42px
     line-height: 52px
-  h3
+  h3, h4
     font-size: 40px
     line-height: 50px
   .header
@@ -99,6 +124,21 @@
         &-text
           font-size: 18px
           line-height: 27px
+  .host
+    & .container
+      align-items: flex-start
+    &-content
+      margin: 0
+      width: 50%
+      &_button
+        width: 70px
+        height: 70px
+      &_text
+        font-size: 18px
+        line-height: 27px
+    &-image
+      min-width: unset
+      width: 45%
 
 @media (max-width: 768px)
   .header-logo
@@ -118,6 +158,19 @@
         display: none
       &_content
         width: 85%
+  .host
+    & .container
+      flex-wrap: wrap
+    &-content
+      margin-top: 40px
+      & p
+        display: none
+    &-image
+      width: 48%
+    &-mobile
+      display: flex
+      flex-direction: column
+      margin-top: 25px
 
 // @media (max-width: 745px)
 
@@ -178,9 +231,11 @@
   .episodes
     &-item
       padding: 30px
+  .host
+    padding-bottom: 100px
 
 @media (max-width: 576px)
-  h2
+  h2, h4
     font-size: 34px
     line-height: 43px
   h3
@@ -226,9 +281,20 @@
         &-text
           font-size: 16px
           line-height: 25px
+  .host
+    &-content
+      margin-top: 30px
+      &_button
+        width: 55px
+        height: 55px
+      &_text
+        font-size: 16px
+        line-height: 24px
+    &-mobile
+      margin-top: 15px
 
 @media (max-width: 460px)
-  h2
+  h2, h4
     font-size: 30px
     line-height: 40px
   h3
@@ -282,14 +348,34 @@
         &-text
           font-size: 14px
           line-height: 22px
+  .host
+    padding-bottom: 50px
+    &-content
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      margin: 0
+      width: 100%
+      &_button
+        transform: rotate(90deg)
+      &_title
+        margin-bottom: 25px
+    &-image
+      width: 100%
+      height: 250px
+      object-position: 50% 10%
 
 @media (max-width: 320px)
-  h2
+  h2, h4
     font-size: 22px
     line-height: 31px
   h3
     font-size: 20px
     line-height: 28px
+  h5
+    font-size: 16px
+    line-height: 25px
   .button
     padding: 6px 18px
   .header
@@ -320,3 +406,11 @@
       padding: 20px
       &_content
         width: 100%
+  .host
+    &-content
+      &_button
+        width: 45px
+        height: 45px
+      &_text
+        font-size: 16px
+        line-height: 25px

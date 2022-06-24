@@ -951,6 +951,10 @@ h6 {
   border-radius: 12px;
 }
 
+.host-mobile {
+  display: none;
+}
+
 .subscribe {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1253,6 +1257,9 @@ h6 {
   .container {
     width: 90%;
   }
+  .host-image {
+    min-width: 50%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1263,6 +1270,10 @@ h6 {
   h3 {
     font-size: 56px;
     line-height: 68px;
+  }
+  h4 {
+    font-size: 52px;
+    line-height: 70px;
   }
   .hero-image {
     width: 55%;
@@ -1280,6 +1291,17 @@ h6 {
   .latest-top {
     padding: 0;
   }
+  .host {
+    padding: 0;
+    padding-bottom: 110px;
+  }
+  .host-image {
+    min-width: 45%;
+  }
+  .host-content_button {
+    width: 90px;
+    height: 90px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1287,7 +1309,7 @@ h6 {
     font-size: 50px;
     line-height: 62px;
   }
-  h3 {
+  h3, h4 {
     font-size: 46px;
     line-height: 56px;
   }
@@ -1316,6 +1338,18 @@ h6 {
     font-size: 20px;
     line-height: 31px;
   }
+  .host-content {
+    margin-right: 40px;
+  }
+  .host-content_button {
+    width: 80px;
+    height: 80px;
+  }
+  .host-content_text {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 835px) {
@@ -1323,7 +1357,7 @@ h6 {
     font-size: 42px;
     line-height: 52px;
   }
-  h3 {
+  h3, h4 {
     font-size: 40px;
     line-height: 50px;
   }
@@ -1375,6 +1409,27 @@ h6 {
     font-size: 18px;
     line-height: 27px;
   }
+  .host .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .host-content {
+    margin: 0;
+    width: 50%;
+  }
+  .host-content_button {
+    width: 70px;
+    height: 70px;
+  }
+  .host-content_text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .host-image {
+    min-width: unset;
+    width: 45%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1403,6 +1458,29 @@ h6 {
   }
   .episodes-item_content {
     width: 85%;
+  }
+  .host .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .host-content {
+    margin-top: 40px;
+  }
+  .host-content p {
+    display: none;
+  }
+  .host-image {
+    width: 48%;
+  }
+  .host-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 25px;
   }
 }
 
@@ -1482,10 +1560,13 @@ h6 {
   .episodes-item {
     padding: 30px;
   }
+  .host {
+    padding-bottom: 100px;
+  }
 }
 
 @media (max-width: 576px) {
-  h2 {
+  h2, h4 {
     font-size: 34px;
     line-height: 43px;
   }
@@ -1546,10 +1627,24 @@ h6 {
     font-size: 16px;
     line-height: 25px;
   }
+  .host-content {
+    margin-top: 30px;
+  }
+  .host-content_button {
+    width: 55px;
+    height: 55px;
+  }
+  .host-content_text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .host-mobile {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 460px) {
-  h2 {
+  h2, h4 {
     font-size: 30px;
     line-height: 40px;
   }
@@ -1620,16 +1715,51 @@ h6 {
     font-size: 14px;
     line-height: 22px;
   }
+  .host {
+    padding-bottom: 50px;
+  }
+  .host-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  .host-content_button {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .host-content_title {
+    margin-bottom: 25px;
+  }
+  .host-image {
+    width: 100%;
+    height: 250px;
+    -o-object-position: 50% 10%;
+       object-position: 50% 10%;
+  }
 }
 
 @media (max-width: 320px) {
-  h2 {
+  h2, h4 {
     font-size: 22px;
     line-height: 31px;
   }
   h3 {
     font-size: 20px;
     line-height: 28px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 25px;
   }
   .button {
     padding: 6px 18px;
@@ -1667,6 +1797,14 @@ h6 {
   }
   .episodes-item_content {
     width: 100%;
+  }
+  .host-content_button {
+    width: 45px;
+    height: 45px;
+  }
+  .host-content_text {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
