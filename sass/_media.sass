@@ -2,13 +2,30 @@
   .container
     width: 90%
 
-// @media (max-width: 1200px)
+@media (max-width: 1200px)
+  .hero
+    &-image
+      width: 55%
+    &-content
+      width: 40%
+    &-title
+      font-size: 63px
+      line-height: 81px
 
 // @media (max-width: 1100px)
 
 // @media (max-width: 1024px)
 
-// @media (max-width: 992px)
+@media (max-width: 992px)
+  .hero
+    &-image
+      width: 50%
+      margin-right: 40px
+    &-content
+      margin-bottom: 70px
+    &-title
+      font-size: 52px
+      line-height: 70px
 
 // @media (max-width: 930px)
 
@@ -20,6 +37,22 @@
     &-menu_link
       font-size: 16px
       line-height: 25px
+  .hero
+    & .container
+      justify-content: space-between
+      &::before
+        height: 55px
+        top: -15px
+        left: -20px
+    &-image
+      margin-right: 0
+    &-content
+      margin-bottom: 60px
+      width: 45%
+    &-title
+      margin-bottom: 60px
+      font-size: 45px
+      line-height: 60px
 
 @media (max-width: 768px)
   .header-logo
@@ -35,6 +68,41 @@
     &-menu_link
       font-size: 14px
       line-height: 23px
+  .hero
+    padding-top: 0
+    & .container
+      &::before
+        height: 45px
+        top: -10px
+        left: -15px
+    &-image
+      display: none
+    &-content
+      align-items: flex-end
+      justify-content: space-between
+      width: 100%
+      height: 370px
+      margin: 0
+      padding: 30px
+      border-radius: 12px
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../images/hero-img.png')
+      background-repeat: no-repeat, no-repeat
+      background-position: center, 100% 40%
+      object-fit: cover
+      &_text
+        text-align: right
+        margin-bottom: 5px
+      &_link
+        margin: 0
+        margin-left: 12px
+        width: 30px
+        height: 30px
+    &-title
+      width: 80%
+      margin: 0
+      text-align: right
+      font-size: 40px
+      line-height: 52px
 
 @media (max-width: 576px)
   .header
@@ -42,6 +110,17 @@
       width: 120px
     &-menu_item
       margin-left: 25px
+  .hero
+    &-title
+      font-size: 36px
+      line-height: 46px
+      &--underline::after
+        bottom: -3px
+    &-content
+      height: 330px
+      background-position: center, 85% 40%
+      &_text
+        font-size: 14px
 
 @media (max-width: 460px)
   .burger
@@ -52,6 +131,23 @@
       display: none
     &-menu
       display: none
+  .hero
+    padding-top: 20px
+    & .container
+      &::before
+        height: 35px
+        left: -10px
+    &-title
+      width: 75%
+      font-size: 31px
+      line-height: 41px
+    &-content
+      padding: 25px
+      background-position: center, 70% 35%
+      &_link
+        margin-left: 10px
+        width: 25px
+        height: 25px
 
 @media (max-width: 320px)
   .header
@@ -63,3 +159,16 @@
             font-size: 1.3em
       &_logo
         width: 50%
+  .hero
+    &-title
+      font-size: 24px
+      line-height: 32px
+      &--underline::after
+        bottom: -6px
+    &-content
+      padding: 20px
+      &_text
+        font-size: 12px
+      &_link
+        width: 20px
+        height: 20px
