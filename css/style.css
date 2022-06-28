@@ -826,6 +826,10 @@ h6 {
   border-radius: 32px;
 }
 
+.episodes-item:last-child {
+  margin-bottom: 0;
+}
+
 .episodes-item_image {
   margin-right: 53px;
   width: 389px;
@@ -982,6 +986,7 @@ h6 {
   height: 91px;
   background-image: url("../images/subscribe-lines.png");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .subscribe-column {
@@ -1275,6 +1280,10 @@ h6 {
     font-size: 52px;
     line-height: 70px;
   }
+  h6 {
+    font-size: 60px;
+    line-height: 72px;
+  }
   .hero-image {
     width: 55%;
   }
@@ -1302,6 +1311,16 @@ h6 {
     width: 90px;
     height: 90px;
   }
+  .subscribe {
+    padding-top: 70px;
+    padding-bottom: 110px;
+  }
+  .subscribe-wrapper {
+    padding: 50px 50px 65px;
+  }
+  .subscribe-form_input {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1309,7 +1328,7 @@ h6 {
     font-size: 50px;
     line-height: 62px;
   }
-  h3, h4 {
+  h3, h4, h6 {
     font-size: 46px;
     line-height: 56px;
   }
@@ -1338,6 +1357,9 @@ h6 {
     font-size: 20px;
     line-height: 31px;
   }
+  .host {
+    padding-bottom: 70px;
+  }
   .host-content {
     margin-right: 40px;
   }
@@ -1350,6 +1372,19 @@ h6 {
     font-size: 20px;
     line-height: 30px;
   }
+  .subscribe {
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
+  .subscribe-wrapper::after {
+    bottom: -45px;
+    left: -25px;
+    width: 130px;
+  }
+  .subscribe-form_input {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 835px) {
@@ -1357,7 +1392,7 @@ h6 {
     font-size: 42px;
     line-height: 52px;
   }
-  h3, h4 {
+  h3, h4, h6 {
     font-size: 40px;
     line-height: 50px;
   }
@@ -1430,9 +1465,21 @@ h6 {
     min-width: unset;
     width: 45%;
   }
+  .subscribe-wrapper {
+    padding: 40px;
+  }
+  .subscribe-form_input {
+    padding: 15px 20px;
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 768px) {
+  h6 {
+    font-size: 37px;
+    line-height: 46px;
+  }
   .header-logo {
     width: 150px;
   }
@@ -1482,6 +1529,12 @@ h6 {
             flex-direction: column;
     margin-top: 25px;
   }
+  .subscribe-wrapper::after {
+    bottom: -30px;
+    left: -20px;
+    width: 100px;
+    height: 70px;
+  }
 }
 
 @media (max-width: 683px) {
@@ -1492,6 +1545,10 @@ h6 {
   h3 {
     font-size: 36px;
     line-height: 46px;
+  }
+  h6 {
+    font-size: 32px;
+    line-height: 39px;
   }
   .button {
     font-size: 14px;
@@ -1561,7 +1618,24 @@ h6 {
     padding: 30px;
   }
   .host {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
+  }
+  .subscribe {
+    padding-bottom: 60px;
+  }
+  .subscribe-wrapper {
+    padding: 30px;
+  }
+  .subscribe-column {
+    width: 49%;
+  }
+  .subscribe-form {
+    padding: 0;
+    width: 49%;
+  }
+  .subscribe-form_input {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 
@@ -1573,6 +1647,10 @@ h6 {
   h3 {
     font-size: 32px;
     line-height: 41px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 23px;
   }
   .header-logo {
     width: 120px;
@@ -1641,6 +1719,38 @@ h6 {
   .host-mobile {
     margin-top: 15px;
   }
+  .subscribe-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subscribe-wrapper::after {
+    bottom: -25px;
+    left: -10px;
+    width: 90px;
+    height: 60px;
+  }
+  .subscribe-column {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .subscribe-form {
+    width: 100%;
+  }
+  .subscribe-form_input {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .subscribe-form_button {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .subscribe-br {
+    display: none;
+  }
 }
 
 @media (max-width: 460px) {
@@ -1651,6 +1761,14 @@ h6 {
   h3 {
     font-size: 26px;
     line-height: 35px;
+  }
+  h5 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  h6 {
+    font-size: 29px;
+    line-height: 33px;
   }
   .button {
     font-size: 12px;
@@ -1746,6 +1864,12 @@ h6 {
     -o-object-position: 50% 10%;
        object-position: 50% 10%;
   }
+  .subscribe {
+    padding-bottom: 50px;
+  }
+  .subscribe-wrapper {
+    padding: 25px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1758,8 +1882,12 @@ h6 {
     line-height: 28px;
   }
   h5 {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  h6 {
+    font-size: 24px;
+    line-height: 28px;
   }
   .button {
     padding: 6px 18px;
@@ -1798,6 +1926,9 @@ h6 {
   .episodes-item_content {
     width: 100%;
   }
+  .host {
+    padding-bottom: 40px;
+  }
   .host-content_button {
     width: 45px;
     height: 45px;
@@ -1805,6 +1936,14 @@ h6 {
   .host-content_text {
     font-size: 16px;
     line-height: 25px;
+  }
+  .subscribe {
+    padding-bottom: 40px;
+  }
+  .subscribe-wrapper::after {
+    bottom: -20px;
+    width: 70px;
+    height: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
