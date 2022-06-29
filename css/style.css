@@ -1702,7 +1702,7 @@ h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
-    height: 370px;
+    height: 80vh;
     margin: 0;
     padding: 30px;
     border-radius: 12px;
@@ -1828,7 +1828,6 @@ h6 {
     bottom: -3px;
   }
   .hero-content {
-    height: 350px;
     background-position: center, 85% 40%;
   }
   .hero-content_text {
