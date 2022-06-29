@@ -58,10 +58,16 @@
       &_author
         font-size: 21px
         line-height: 27px
-
-// @media (max-width: 1100px)
-
-// @media (max-width: 1024px)
+  .footer
+    padding-top: 70px
+    &-wrapper
+      margin-bottom: 30px
+      grid-template-columns: 1fr minmax(min-content, 250px) minmax(180px, 250px)
+    &-stations
+      display: none
+      &--responsive
+        display: flex
+        justify-content: center
 
 @media (max-width: 992px)
   h2
@@ -128,8 +134,10 @@
       &_author
         font-size: 19px
         line-height: 25px
-
-// @media (max-width: 930px)
+  .footer
+    padding-bottom: 70px
+    &-wrapper
+      grid-template-columns: minmax(300px, 1fr) minmax(min-content, 250px) minmax(min-content, 250px)
 
 @media (max-width: 835px)
   h2
@@ -196,6 +204,8 @@
         padding: 15px 20px
         font-size: 18px
         line-height: 20px
+  .footer
+    padding-top: 50px
 
 @media (max-width: 768px)
   h6
@@ -246,8 +256,10 @@
       &_author
         font-size: 16px
         line-height: 19px
-
-// @media (max-width: 745px)
+  .footer
+    &-column
+      &_logo
+        width: 200px
 
 @media (max-width: 683px)
   h2
@@ -337,6 +349,21 @@
       &_author
         font-size: 14px
         line-height: 17px
+  .footer
+    padding-top: 30px
+    padding-bottom: 60px
+    &-wrapper
+      justify-items: center
+      grid-template-columns: 1fr 1fr
+      row-gap: 30px
+    &-column
+      grid-column: 1/3
+      &_social
+        justify-content: center
+    &-stations
+      &_link
+        width: 30px
+        height: 30px
 
 @media (max-width: 576px)
   h2, h4
@@ -424,6 +451,14 @@
   .reviews
     &-items
       grid-template-columns: 1fr
+  .footer
+    padding-top: 20px
+    &-menu
+      &_item
+        margin-bottom: 8px
+      &_link
+        font-size: 14px
+        line-height: 23px
 
 @media (max-width: 460px)
   h2, h4
@@ -517,6 +552,20 @@
       &_author
         font-size: 12px
         line-height: 16px
+  .footer
+    padding-bottom: 50px
+    &-wrapper
+      grid-template-columns: 1fr
+      gap: 0
+    &-column
+      margin-bottom: 30px
+      grid-column: auto
+    &-menu
+      text-align: center
+    &-stations
+      &_link
+        &:last-child
+          margin-right: 0
 
 @media (max-width: 320px)
   h2, h4
@@ -578,4 +627,6 @@
         width: 70px
         height: 50px
   .reviews
+    padding-bottom: 40px
+  .footer
     padding-bottom: 40px
