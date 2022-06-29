@@ -1321,6 +1321,21 @@ h6 {
   .subscribe-form_input {
     padding: 20px;
   }
+  .reviews {
+    padding-top: 70px;
+    padding-bottom: 110px;
+  }
+  .reviews-item {
+    padding: 50px;
+  }
+  .reviews-item_text {
+    font-size: 34px;
+    line-height: 41px;
+  }
+  .reviews-item_author {
+    font-size: 21px;
+    line-height: 27px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1384,6 +1399,25 @@ h6 {
   .subscribe-form_input {
     font-size: 22px;
     line-height: 26px;
+  }
+  .reviews {
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
+  .reviews-item {
+    padding: 40px;
+  }
+  .reviews-item_rating {
+    margin-bottom: 15px;
+  }
+  .reviews-item_text {
+    margin-bottom: 12px;
+    font-size: 31px;
+    line-height: 37px;
+  }
+  .reviews-item_author {
+    font-size: 19px;
+    line-height: 25px;
   }
 }
 
@@ -1535,6 +1569,14 @@ h6 {
     width: 100px;
     height: 70px;
   }
+  .reviews-item_text {
+    font-size: 27px;
+    line-height: 31px;
+  }
+  .reviews-item_author {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 @media (max-width: 683px) {
@@ -1636,6 +1678,25 @@ h6 {
   .subscribe-form_input {
     font-size: 16px;
     line-height: 18px;
+  }
+  .reviews {
+    padding-bottom: 60px;
+  }
+  .reviews-item {
+    padding: 35px;
+  }
+  .reviews-item_rating {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .reviews-item_text {
+    margin-bottom: 9px;
+    font-size: 23px;
+    line-height: 26px;
+  }
+  .reviews-item_author {
+    font-size: 14px;
+    line-height: 17px;
   }
 }
 
@@ -1750,6 +1811,10 @@ h6 {
   }
   .subscribe-br {
     display: none;
+  }
+  .reviews-items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -1870,6 +1935,20 @@ h6 {
   .subscribe-wrapper {
     padding: 25px;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
+  .reviews-item {
+    padding: 30px;
+  }
+  .reviews-item_text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .reviews-item_author {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1944,6 +2023,9 @@ h6 {
     bottom: -20px;
     width: 70px;
     height: 50px;
+  }
+  .reviews {
+    padding-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
