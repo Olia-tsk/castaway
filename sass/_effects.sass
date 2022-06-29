@@ -72,5 +72,50 @@
 
 // отключаем анимацию на планшетах и мобильных телефонах
 @media (max-width: 768px)
-  .station-icon:hover
-    transform: none
+  .station
+    &-icon:hover
+      transform: none
+
+  .social
+    &-icon
+      &:hover
+        stroke: #ffffff
+      &:active
+        stroke: #118DA8
+
+  .button
+    &:hover
+      background-color: #118DA8
+    &:active
+      background-color: rgba(17, 140, 168, 0.2)
+    &:before
+      transform: none
+      content: none
+
+  .header
+    &-menu
+      &_link
+        &:hover
+          color: inherit
+        &:active
+          color: #118DA8
+
+  .host
+    &-content
+      &_button
+        &:hover img
+          animation-name: none
+
+  .reviews
+    &-item
+      &:hover
+        transform: none
+        box-shadow: none
+
+  .footer
+    &-menu
+      &_link
+        &:hover
+          color: inherit
+        &:active
+          color: #118DA8

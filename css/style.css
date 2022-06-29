@@ -1260,6 +1260,45 @@ h6 {
     -webkit-transform: none;
             transform: none;
   }
+  .social-icon:hover {
+    stroke: #ffffff;
+  }
+  .social-icon:active {
+    stroke: #118DA8;
+  }
+  .button:hover {
+    background-color: #118DA8;
+  }
+  .button:active {
+    background-color: rgba(17, 140, 168, 0.2);
+  }
+  .button:before {
+    -webkit-transform: none;
+            transform: none;
+    content: none;
+  }
+  .header-menu_link:hover {
+    color: inherit;
+  }
+  .header-menu_link:active {
+    color: #118DA8;
+  }
+  .host-content_button:hover img {
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
+  .reviews-item:hover {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .footer-menu_link:hover {
+    color: inherit;
+  }
+  .footer-menu_link:active {
+    color: #118DA8;
+  }
 }
 
 @media (max-width: 1400px) {
