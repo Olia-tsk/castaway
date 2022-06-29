@@ -446,6 +446,10 @@ h6 {
   stroke: #ffffff;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .header {
   padding-top: 46px;
   padding-bottom: 40px;
